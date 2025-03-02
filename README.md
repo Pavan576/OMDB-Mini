@@ -1,36 +1,114 @@
-## React
+# 🎥 IMDB/OMDB - MINI PROJECT 🍿
 
-This is a simple React application. This application serves as a basic template for a react applications.  
-This project is bootstrapped with [Vite](https://vitejs.dev/guide/).
+A React-based movie search and details app using the OMDB API. Find movies, view details, and save your favorites! 🚀
 
-## How to run
+## ✨ Features
+✅ Search for movies using the OMDB API 🔍🎞️  
+✅ View detailed movie information 📝🎬  
+✅ Add/remove movies from favorites ❤️❌  
+✅ Smooth UI with Framer Motion animations 🎨💫  
 
-1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
+## 📸 Preview
+![image](https://github.com/user-attachments/assets/b8f4b9b2-9737-4424-8034-f102cdda5333)
+![image](https://github.com/user-attachments/assets/7b2d6301-17ae-4417-bfba-ccc813591acc)
+![image](https://github.com/user-attachments/assets/e5718b40-dc34-4fd2-ad6a-f1c92ceb90a7)
+![image](https://github.com/user-attachments/assets/c34570e2-bfc9-435a-84ce-ab43290aeb77)
+
+
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Pavan576/OMDB-Mini.git
+   cd OMDB-Mini
+   ```
+2. Install dependencies:
    ```sh
    npm install
    ```
+3. Set up your OMDB API key:
+   - Open the `src/api/omdb.jsx` file.
+   - Paste your API key inside the file. 🔑
 
-2. Once dependencies are installed, run the following command to start the application:
+4. Start the development server:
    ```sh
-   npm run dev
+   npm start
    ```
 
-3. Refresh the URL in simple browser to see the output. As shown below 
-   ![](https://static.onecompiler.com/images/posts/3zzkbysj7/studio-react-vite-reload.png)
+5. Refresh the URL in the Simple Browser to see the output. 🔄🌐
+   
+   ![Simple Browser Refresh](https://github.com/user-attachments/assets/30a2295e-97cc-419f-a9e9-9b27ffb70934)
 
 
-## FAQs & Debugging
+## 🔑 API Configuration
+- This project uses the OMDB API 🎥.
+- Get your API key from [OMDB API](https://www.omdbapi.com/apikey.aspx).
+- Replace the placeholder with your actual API key inside `src/api/omdb.jsx`.
 
- ### 1. I do not see browser in my workspace
- Studio will automatically open the app in a new browser tab. If not, you can use the following steps to open the simple browser 
+## 📂 Project Structure
+```
+OMDB-Mini/
+│── node_modules/
+│── public/
+│── src/
+│   ├── api/
+│   │   ├── omdb.jsx
+│   ├── components/
+│   │   ├── MovieCard.jsx
+│   │   ├── MovieGrid.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── SearchBar.jsx
+│   ├── context/
+│   │   ├── FavoritesContext.jsx
+│   ├── pages/
+│   │   ├── Favorites.jsx
+│   │   ├── Home.jsx
+│   │   ├── MovieDetails.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│── .eslintrc.cjs
+│── .gitignore
+│── eslint.config.js
+│── index.html
+│── jsconfig.json
+│── package.json
+│── package-lock.json
+│── postcss.config.js
+│── README.md
+│── tailwind.config.js
+```
 
-1. From VS Code command pallette(`Ctrl/Cmd + Shift + P`), run **Studio Manager: SimpleBrowser Default URL** command. This will open the app in a new browser tab.
+## 🚀 Deployment
+To deploy the app:
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+2. Deploy to Netlify, Vercel, or GitHub Pages.
+   - **Netlify**: Drag & drop the `build` folder 🌍.
+   - **Vercel**: Use `vercel deploy` ⚡.
+   - **GitHub Pages**:
+     ```sh
+     npm install gh-pages --save-dev
+     ```
+     Update `package.json`:
+     ```json
+     "homepage": "https://Pavan576.github.io/OMDB-Mini",
+     "scripts": {
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d build"
+     }
+     ```
+     Then run:
+     ```sh
+     npm run deploy
+     ```
 
-2. Your app runs on hosted env which can be accessed using host id, port provided in file **.vsocde/.studio/studio-env.json**. Use values to create the URL as follows:
-   `https://<STUDIO_HOST_ID>-3000.ocws.app`
+## 📜 License
+📝 MIT License
 
- ### 2. Getting `vite: not found` error
- This means node_modules are missing in your workspace, please refer the 'How to run' section and make sure you have followed the steps in sequence
-
- ### 3. Can I use create-react-app instead Vite?
- Yes, you can use create-react-app instead Vite, the default workspace is loaded with Vite setup, you can remove the Vite dependencies, add create-react-app dependencies and update the scripts to start using create-react-app.
+---
+Happy Coding! 🚀🎬
